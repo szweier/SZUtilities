@@ -11,7 +11,7 @@ public extension UIView {
         return animation
     }
 
-    public func szStopPulsing() {
+    public func szEndPulsing() {
         layer.removeAnimation(forKey: "szPulseAnimation")
     }
 }

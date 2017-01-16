@@ -40,6 +40,9 @@ class ViewController: UIViewController {
 
         testView.szPointAt(viewToPointAt, position: .left, backgroundColor: .white, borderColor: .black)
 
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+            viewToPointAt.szEndPulsing()
+        }
     }
 }
 
