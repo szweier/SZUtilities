@@ -11,15 +11,18 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.subspec 'Movable' do |sp|
-    sp.source_files = 'SZUtilities/Classes/Movable'
+    sp.source_files = 'SZUtilities/Classes/UIView/Movable'
   end
   s.subspec 'CornerRadius' do |sp|
-    sp.source_files = 'SZUtilities/Classes/CornerRadius'
+    sp.source_files = 'SZUtilities/Classes/UIView/CornerRadius'
   end
   s.subspec 'ProgressView' do |sp|
-    sp.source_files = 'SZUtilities/Classes/ProgressView'
+    sp.source_files = 'SZUtilities/Classes/UIView/ProgressView'
   end
   s.subspec 'Tooltip' do |sp|
-    sp.source_files = 'SZUtilities/Classes/Tooltip'
+    sp.source_files = 'SZUtilities/Classes/UIView/Tooltip'
+  end
+  s.subspec 'Animations' do |sp|
+    sp.source_files = 'SZUtilities/Classes/UIView/Animations'
   end
 end
