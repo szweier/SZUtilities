@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         viewToPointAt.layer.cornerRadius = 12.5
         view.addSubview(viewToPointAt)
         viewToPointAt.szMakeMovable()
+        viewToPointAt.szBeginPulsing(withToValue: 0.5)
+        
 
         let testView = UIView()
         let label = UILabel()
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
         view.addSubview(testView)
         testView.addSubview(label)
 
-        testView.pointAt(viewToPointAt, position: .left, backgroundColor: .white, borderColor: .black)
+        testView.szPointAt(viewToPointAt, position: .left, backgroundColor: .white, borderColor: .black)
 
     }
 }
