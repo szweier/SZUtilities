@@ -40,8 +40,16 @@ class ViewController: UIViewController {
 
         testView.szPointAt(viewToPointAt, position: .left, backgroundColor: .white, borderColor: .black)
 
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) { [weak self] in
             viewToPointAt.szEndPulsing()
+
+            let vc = UIViewController()
+            vc.view.backgroundColor = .red
+            self?.presentGlobally(vc, animated: true, completion: nil)
+
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10.0) { [weak self] in
+                self?.dismissGlobal(animated: true, completion: nil)
+            }
         }
     }
 }
