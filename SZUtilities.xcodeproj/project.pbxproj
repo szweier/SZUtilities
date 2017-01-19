@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB037F481E30475E00592AB3 /* UIViewController+GloballyPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB037F471E30475E00592AB3 /* UIViewController+GloballyPresentable.swift */; };
 		DB0FE5B71E2D046D0094C9B6 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE5AE1E2D046D0094C9B6 /* UIView+Animations.swift */; };
 		DB0FE5B81E2D046D0094C9B6 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE5B01E2D046D0094C9B6 /* UIView+CornerRadius.swift */; };
 		DB0FE5B91E2D046D0094C9B6 /* UIView+Movable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE5B21E2D046D0094C9B6 /* UIView+Movable.swift */; };
 		DB0FE5BA1E2D046D0094C9B6 /* UIView+ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE5B41E2D046D0094C9B6 /* UIView+ProgressView.swift */; };
 		DB0FE5BB1E2D046D0094C9B6 /* UIView+Tooltip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE5B61E2D046D0094C9B6 /* UIView+Tooltip.swift */; };
-		DBA937D31E303A5500FE0561 /* UIViewController+GloballyPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA937D21E303A5500FE0561 /* UIViewController+GloballyPresentable.swift */; };
 		DBECC43B1E2708A500760A63 /* SZUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DBECC4391E2708A500760A63 /* SZUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB037F471E30475E00592AB3 /* UIViewController+GloballyPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GloballyPresentable.swift"; sourceTree = "<group>"; };
 		DB0FE5AE1E2D046D0094C9B6 /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		DB0FE5B01E2D046D0094C9B6 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		DB0FE5B21E2D046D0094C9B6 /* UIView+Movable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Movable.swift"; sourceTree = "<group>"; };
 		DB0FE5B41E2D046D0094C9B6 /* UIView+ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ProgressView.swift"; sourceTree = "<group>"; };
 		DB0FE5B61E2D046D0094C9B6 /* UIView+Tooltip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Tooltip.swift"; sourceTree = "<group>"; };
-		DBA937D21E303A5500FE0561 /* UIViewController+GloballyPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GloballyPresentable.swift"; sourceTree = "<group>"; };
 		DBECC4361E2708A500760A63 /* SZUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBECC4391E2708A500760A63 /* SZUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZUtilities.h; sourceTree = "<group>"; };
 		DBECC43A1E2708A500760A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB037F461E30475E00592AB3 /* GloballyPresentable */ = {
+			isa = PBXGroup;
+			children = (
+				DB037F471E30475E00592AB3 /* UIViewController+GloballyPresentable.swift */,
+			);
+			path = GloballyPresentable;
+			sourceTree = "<group>";
+		};
 		DB0FE5AC1E2D046D0094C9B6 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +111,7 @@
 		DBA937D11E30399700FE0561 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DBA937D21E303A5500FE0561 /* UIViewController+GloballyPresentable.swift */,
+				DB037F461E30475E00592AB3 /* GloballyPresentable */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -219,7 +227,7 @@
 				DB0FE5BA1E2D046D0094C9B6 /* UIView+ProgressView.swift in Sources */,
 				DB0FE5B91E2D046D0094C9B6 /* UIView+Movable.swift in Sources */,
 				DB0FE5B71E2D046D0094C9B6 /* UIView+Animations.swift in Sources */,
-				DBA937D31E303A5500FE0561 /* UIViewController+GloballyPresentable.swift in Sources */,
+				DB037F481E30475E00592AB3 /* UIViewController+GloballyPresentable.swift in Sources */,
 				DB0FE5B81E2D046D0094C9B6 /* UIView+CornerRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
