@@ -25,4 +25,7 @@ Pod::Spec.new do |s|
   s.subspec 'Animations' do |sp|
     sp.source_files = 'SZUtilities/Classes/UIView/Animations'
   end
+  s.subspec 'GloballyPresentable' do |sp|
+    sp.source_files = 'SZUtilities/Classes/UIViewController/GloballyPresentable'
+  end
 end
