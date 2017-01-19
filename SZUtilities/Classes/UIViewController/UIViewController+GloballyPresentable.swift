@@ -1,7 +1,7 @@
 private var additionalWindowAssociationKey: UInt8 = 0
 
 public extension UIViewController {
-    var additionalWindow: UIWindow! {
+    internal var additionalWindow: UIWindow! {
         get {
             return objc_getAssociatedObject(self, &additionalWindowAssociationKey) as? UIWindow
         }
@@ -10,7 +10,7 @@ public extension UIViewController {
         }
     }
 
-    func presentGlobally(_ viewControllerToPresent: UIViewController, animated: Bool, completion: (() -> Void)?) {
+    func szPresentGlobally(_ viewControllerToPresent: UIViewController, animated: Bool, completion: (() -> Void)?) {
         additionalWindow = UIWindow()
         additionalWindow.backgroundColor = .clear
         additionalWindow.rootViewController = UIViewController()
@@ -19,7 +19,7 @@ public extension UIViewController {
         additionalWindow.rootViewController?.present(viewControllerToPresent, animated: animated, completion: completion)
     }
 
-    func dismissGlobal(animated: Bool, completion: (() -> Void)?) {
+    func szDismissGlobal(animated: Bool, completion: (() -> Void)?) {
         additionalWindow.rootViewController?.dismiss(animated: animated, completion: { [weak self] in
             self?.additionalWindow.isHidden = true
             self?.additionalWindow = nil

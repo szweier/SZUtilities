@@ -45,10 +45,10 @@ class ViewController: UIViewController {
 
             let vc = UIViewController()
             vc.view.backgroundColor = .red
-            self?.presentGlobally(vc, animated: true, completion: nil)
+            self?.szPresentGlobally(vc, animated: true, completion: nil)
 
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10.0) { [weak self] in
-                self?.dismissGlobal(animated: true, completion: nil)
+                self?.szDismissGlobal(animated: true, completion: nil)
             }
         }
     }
